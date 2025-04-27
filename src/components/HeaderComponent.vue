@@ -28,7 +28,7 @@ const selectItem = (index: any, sectionId: string) => {
 
 <template>
   <header
-    class="sticky top-0 flex flex-col justify-between w-[48%] special-gothic-expanded-one-regular z-50 py-15 h-full"
+    class="sticky top-0 flex flex-col justify-between w-[48%] special-gothic-expanded-one-regular z-50 py-24 h-full"
   >
     <div>
       <h1 class="text-[#D5C7B2] text-5xl">Kharl Aquino</h1>

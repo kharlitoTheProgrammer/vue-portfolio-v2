@@ -46,7 +46,7 @@ const certifications = ref([
 
 <template>
   <main
-    class="w-[52%] text-[#A49581] space-y-12 flex-grow py-15 max-h-full overflow-y-auto -mr-20 pr-20"
+    class="w-[52%] text-[#A49581] space-y-24 flex-grow py-15 max-h-full overflow-y-auto -mr-20 pr-20"
   >
     <section id="about" class="space-y-10 special-gothic-expanded-one-regular">
       <p class="text-xs opacity-60">
