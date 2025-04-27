@@ -5,7 +5,7 @@ import MainComponent from "./components/MainComponent.vue";
 
 <template>
   <div class="bg-[#1A2421] h-screen">
-    <div class="flex justify-between h-full max-w-screen px-20 gap-8">
+    <div class="flex justify-between h-full max-w-screen px-40 gap-8">
       <HeaderComponent />
       <MainComponent />
     </div>

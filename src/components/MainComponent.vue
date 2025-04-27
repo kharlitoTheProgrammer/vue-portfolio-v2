@@ -46,10 +46,10 @@ const certifications = ref([
 
 <template>
   <main
-    class="w-[52%] text-[#A49581] space-y-24 flex-grow py-15 max-h-full overflow-y-auto -mr-20 pr-20"
+    class="w-[52%] text-[#A49581] space-y-24 flex-grow py-24 max-h-full overflow-y-auto -mr-40 pr-40"
   >
     <section id="about" class="space-y-10 special-gothic-expanded-one-regular">
-      <p class="text-xs opacity-60">
+      <p class="text-2xl opacity-60">
         I'm a junior frontend developer passionate about building clean,
         accessible, and responsive user interfaces. I enjoy turning designs into
         functional, polished experiences while continuously improving my skills
@@ -57,7 +57,7 @@ const certifications = ref([
         about creating projects that not only look great but also offer a smooth
         and thoughtful user experience.
       </p>
-      <p class="text-xs opacity-60">
+      <p class="text-2xl opacity-60">
         Currently, I'm a Front-End Developer Intern at
         <span class="font-bold">DepEd CALABARZON Region IV-A</span>, where I
         <span class="font-bold"
@@ -73,7 +73,7 @@ const certifications = ref([
           real-world projects.</span
         >
       </p>
-      <p class="text-xs opacity-60">
+      <p class="text-2xl opacity-60">
         During my capstone project, which was ranked among the top 10 in my
         semester within the IT department, I had the opportunity to explore both
         frontend and backend development. While I focused mainly on the
@@ -83,18 +83,22 @@ const certifications = ref([
       </p>
     </section>
     <section id="experience" class="special-gothic-regular">
-      <h3 class="text-sm opacity-100 font-bold">Experience</h3>
+      <h3
+        class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular"
+      >
+        Experience
+      </h3>
       <div class="flex flex-col gap-5">
         <div class="mt-5 flex justify-between w-full">
           <div class="w-[35%] flex">
-            <span class="text-xs opacity-75">2025 - Present</span>
+            <span class="text-2xl opacity-75">2025 - Present</span>
           </div>
           <div class="w-full flex flex-col gap-1">
             <!-- Change from w-full to w-[60%] -->
-            <h4 class="text-xs font-bold">
+            <h4 class="text-2xl font-bold">
               Front-End Developer Intern - Department of Education
             </h4>
-            <p class="text-[9px]">
+            <p class="text-lg">
               Contributed to the development of the School account feature using
               Vue by integrating APIs for data retrieval and submission.
               Assisted in setting up client-side routing and building responsive
@@ -106,14 +110,14 @@ const certifications = ref([
         </div>
         <div class="mt-5 flex justify-between w-full">
           <div class="w-[35%] flex">
-            <span class="text-xs opacity-75">2024 - 2025</span>
+            <span class="text-2xl opacity-75">2024 - 2025</span>
           </div>
           <div class="w-full flex flex-col gap-1">
             <!-- Change from w-full to w-[60%] -->
-            <h4 class="text-xs font-bold">
+            <h4 class="text-2xl font-bold">
               Full Stack Android Developer (Capstone) - R.Sarabia Optical
             </h4>
-            <p class="text-[9px]">
+            <p class="text-lg">
               Mobile-Based Virtual Eyeglass Frame Fitting Using Augmented
               Reality with Integrated Online Appointment Management System for
               R. Sarabia Optical. A cutting-edge solution combining augmented
@@ -129,21 +133,23 @@ const certifications = ref([
       </div>
     </section>
     <section id="projects" class="special-gothic-regular">
-      <h3 class="font-bold">Projects</h3>
+      <h3 class="font-bold text-4xl special-gothic-expanded-one-regular">
+        Projects
+      </h3>
       <div
         class="flex gap-2 mt-5"
         v-for="(item, index) in projects"
         :key="index"
       >
         <div>
-          <div class="border border-gray-500 w-30 h-20 rounded-md"></div>
+          <div class="border border-gray-500 w-50 h-50 rounded-md mr-5"></div>
         </div>
-        <div>
-          <h4>{{ item.title }}</h4>
-          <p class="text-[9px]">{{ item.description }}</p>
+        <div class="space-y-3">
+          <h4 class="text-2xl font-bold">{{ item.title }}</h4>
+          <p class="text-xl opacity-80">{{ item.description }}</p>
           <div class="flex flex-wrap mt-1 gap-0.5">
             <p
-              class="text-[8px] text-[#2E7D32] bg-[#121815] h-5 rounded-full flex justify-center items-center px-2 py-1 font-bold hover:-translate-y-2 transition-all ease-in-out duration-500"
+              class="text-sm text-[#2E7D32] bg-[#121815] h-7 rounded-full flex justify-center items-center px-5 py-1 font-bold hover:-translate-y-2 transition-all ease-in-out duration-500"
               v-for="(itemUsed, index) in item.techUsed"
               :key="index"
             >
@@ -154,31 +160,38 @@ const certifications = ref([
       </div>
     </section>
     <section id="certifications" class="special-gothic-regular">
-      <h3 class="text-sm opacity-100 font-bold">Certifications</h3>
+      <h3
+        class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular"
+      >
+        Certifications
+      </h3>
       <div class="flex flex-col gap-5">
         <div
           class="mt-5 flex justify-between w-full"
           v-for="(item, index) in certifications"
           :key="index"
         >
-          <div class="w-[35%] flex">
-            <span class="text-xs opacity-75">{{ item.date }}</span>
+          <div class="w-[35%] flex mr-10">
+            <span class="text-2xl opacity-75">{{ item.date }}</span>
           </div>
           <div class="w-full flex flex-col gap-1">
             <!-- Change from w-full to w-[60%] -->
-            <h4 class="text-xs font-bold">
+            <h4 class="text-3xl font-bold">
               {{ item.certName }}
             </h4>
-            <p class="text-[9px]">
+            <p class="text-xl">
               {{ item.instructor }}
             </p>
           </div>
         </div>
       </div>
     </section>
-    <footer class="text-[8px] w-1/2">
-      Designed in Figma and developed in Visual Studio Code using Vue 3 and
-      Tailwind CSS. Deployed on Vercel for a fast and seamless experience.
+    <footer class="text-lg w-2/3">
+      Designed in <span class="font-bold">Figma</span> and developed in
+      <span class="font-bold">Visual Studio Code</span> using
+      <span class="font-bold">Vue 3</span> and
+      <span class="font-bold">Tailwind CSS</span>. Deployed on
+      <span class="font-bold">Vercel</span> for a fast and seamless experience.
     </footer>
   </main>
 </template>

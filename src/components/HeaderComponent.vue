@@ -31,20 +31,20 @@ const selectItem = (index: any, sectionId: string) => {
     class="sticky top-0 flex flex-col justify-between w-[48%] special-gothic-expanded-one-regular z-50 py-24 h-full"
   >
     <div>
-      <h1 class="text-[#D5C7B2] text-5xl">Kharl Aquino</h1>
-      <h2 class="text-[#A49581]">Frontend Developer</h2>
+      <h1 class="text-[#D5C7B2] text-6xl">Kharl Aquino</h1>
+      <h2 class="text-[#A49581] text-3xl">Frontend Developer</h2>
       <button
-        class="mt-10 cursor-pointer text-[#A49581] opacity-70 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 flex items-center justify-center gap-1 text-xs animate-pulse"
+        class="mt-25 cursor-pointer text-[#A49581] opacity-70 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 flex items-center justify-center gap-1 text-xl animate-pulse"
       >
-        View resume <SquareArrowOutUpRightIcon :size="10" />
+        View resume <SquareArrowOutUpRightIcon :size="15" />
       </button>
-      <section class="mt-10">
+      <section class="mt-25">
         <ul class="text-[#A49581]">
           <li
             v-for="(item, index) in navItems"
             :key="index"
             @click="selectItem(index, item.name)"
-            class="cursor-pointer transition duration-300 ease-in-out"
+            class="cursor-pointer transition duration-300 ease-in-out text-4xl"
             :class="{
               'hover:underline opacity-50 hover:opacity-80': !item.isSelected,
             }"
@@ -67,14 +67,14 @@ const selectItem = (index: any, sectionId: string) => {
           href="https://www.linkedin.com/in/kharl-chris-an-aquino-b6617625b/"
           target="_blank"
         >
-          <LinkedinIcon color="#A49581" :size="20" />
+          <LinkedinIcon color="#A49581" :size="35" />
         </a>
       </li>
       <li
         class="hover:-translate-y-1 transition duration-500 hover:scale-110 cursor-pointer"
       >
         <a href="https://www.github.com/kharlitoTheProgrammer" target="_blank">
-          <GithubIcon color="#A49581" :size="20" />
+          <GithubIcon color="#A49581" :size="35" />
         </a>
       </li>
     </ul>
