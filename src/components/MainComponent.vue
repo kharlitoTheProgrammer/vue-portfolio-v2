@@ -2,6 +2,7 @@
 import ProjectsTab from "./ProjectsTab.vue";
 import AboutTab from "./AboutTab.vue";
 import ExperienceTab from "./ExperienceTab.vue";
+import CertificationTab from "./CertificationTab.vue";
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import ExperienceTab from "./ExperienceTab.vue";
     <AboutTab />
     <ExperienceTab />
     <ProjectsTab />
-
+    <CertificationTab />
     <footer class="text-lg w-2/3">
       Designed in <span class="font-bold">Figma</span> and developed in
       <span class="font-bold">Visual Studio Code</span> using
