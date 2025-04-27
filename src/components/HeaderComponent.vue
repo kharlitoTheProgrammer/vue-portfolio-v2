@@ -28,7 +28,7 @@ const selectItem = (index: any, sectionId: string) => {
 
 <template>
   <header
-    class="sticky top-0 flex flex-col justify-between w-[48%] special-gothic-expanded-one-regular z-50 py-24 h-full"
+    class="sticky top-0 flex flex-col justify-between w-[48%] special-gothic-expanded-one-regular z-50 py-24 h-full slide"
   >
     <div>
       <h1 class="text-[#D5C7B2] text-6xl">Kharl Aquino</h1>
@@ -41,7 +41,8 @@ const selectItem = (index: any, sectionId: string) => {
           href="/Resume_Kharl_Aquino.pdf"
           class="flex items-center justify-center gap-2"
         >
-          View resume <SquareArrowOutUpRightIcon :size="15" />
+          View resumé
+          <SquareArrowOutUpRightIcon :size="15" />
         </a>
       </button>
 
@@ -97,5 +98,24 @@ const selectItem = (index: any, sectionId: string) => {
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-400px);
+    filter: blur(2px);
+    transition: all 1s;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide {
+  animation-name: slideInLeft;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 </style>

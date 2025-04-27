@@ -46,7 +46,7 @@ const certifications = ref([
 
 <template>
   <main
-    class="w-[52%] text-[#A49581] space-y-24 flex-grow py-24 max-h-full overflow-y-auto -mr-40 pr-40"
+    class="w-[52%] text-[#A49581] space-y-24 flex-grow py-24 max-h-full overflow-y-auto -mr-40 pr-40 slide2"
   >
     <section id="about" class="space-y-10 special-gothic-expanded-one-regular">
       <p class="text-2xl opacity-60">
@@ -55,12 +55,11 @@ const certifications = ref([
         into functional experiences while continually improving my skills in
         performance, usability, and modern web technologies.
       </p>
-      <p class="text-2xl opacity-60">
-        Currently, as a Front-End Developer Intern at DepEd CALABARZON Region
-        IV-A, I work on building and improving internal web applications,
-        emphasizing responsive and user-friendly interfaces. My internship has
-        strengthened my skills in frontend technologies and taught me the
-        importance of usability, accessibility, and performance.
+      <p class="text-2xl opacity-">
+        As a Front-End Developer Intern at DepEd CALABARZON Region IV-A, I build
+        and improve internal web apps, focusing on responsive and user-friendly
+        interfaces. This role has enhanced my frontend skills and deepened my
+        understanding of usability, accessibility, and performance.
       </p>
       <p class="text-2xl opacity-60">
         My capstone project, ranked among the top 10 in my IT department,
@@ -77,13 +76,15 @@ const certifications = ref([
         Experience
       </h3>
       <div class="flex flex-col gap-5">
-        <div class="mt-5 flex justify-between w-full">
+        <div
+          class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
+        >
           <div class="w-[35%] flex">
             <span class="text-2xl opacity-75">2025 - Present</span>
           </div>
           <div class="w-full flex flex-col gap-1">
             <!-- Change from w-full to w-[60%] -->
-            <h4 class="text-2xl font-bold">
+            <h4 class="text-2xl font-bold group-hover:text-[#D5C7B2]">
               Front-End Developer Intern - Department of Education
             </h4>
             <p class="text-xl opacity-80">
@@ -96,13 +97,15 @@ const certifications = ref([
             </p>
           </div>
         </div>
-        <div class="mt-5 flex justify-between w-full">
+        <div
+          class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
+        >
           <div class="w-[35%] flex">
             <span class="text-2xl opacity-75">2024 - 2025</span>
           </div>
           <div class="w-full flex flex-col gap-1">
             <!-- Change from w-full to w-[60%] -->
-            <h4 class="text-2xl font-bold">
+            <h4 class="text-2xl font-bold group-hover:text-[#D5C7B2]">
               Full Stack Android Developer (Capstone) - R.Sarabia Optical
             </h4>
             <p class="text-xl opacity-80">
@@ -125,7 +128,7 @@ const certifications = ref([
         Projects
       </h3>
       <div
-        class="flex gap-2 mt-5"
+        class="flex gap-2 mt-5 hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
         v-for="(item, index) in projects"
         :key="index"
       >
@@ -193,5 +196,26 @@ const certifications = ref([
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    filter: blur(2px);
+    transition: all 1s;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide2 {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
 }
 </style>
