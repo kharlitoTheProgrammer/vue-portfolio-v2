@@ -33,11 +33,18 @@ const selectItem = (index: any, sectionId: string) => {
     <div>
       <h1 class="text-[#D5C7B2] text-6xl">Kharl Aquino</h1>
       <h2 class="text-[#A49581] text-3xl">Frontend Developer</h2>
+
       <button
-        class="mt-25 cursor-pointer text-[#A49581] opacity-70 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 flex items-center justify-center gap-1 text-xl animate-pulse"
+        class="mt-25 cursor-pointer text-[#A49581] opacity-80 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 gap-1 text-xl animate-pulse"
       >
-        View resume <SquareArrowOutUpRightIcon :size="15" />
+        <a
+          href="/Resume_Kharl_Aquino.pdf"
+          class="flex items-center justify-center gap-2"
+        >
+          View resume <SquareArrowOutUpRightIcon :size="15" />
+        </a>
       </button>
+
       <section class="mt-25">
         <ul class="text-[#A49581]">
           <li
