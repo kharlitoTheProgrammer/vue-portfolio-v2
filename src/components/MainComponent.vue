@@ -50,36 +50,24 @@ const certifications = ref([
   >
     <section id="about" class="space-y-10 special-gothic-expanded-one-regular">
       <p class="text-2xl opacity-60">
-        I'm a junior frontend developer passionate about building clean,
-        accessible, and responsive user interfaces. I enjoy turning designs into
-        functional, polished experiences while continuously improving my skills
-        in performance, usability, and modern web technologies. I'm excited
-        about creating projects that not only look great but also offer a smooth
-        and thoughtful user experience.
+        I'm a junior frontend developer passionate about creating clean,
+        accessible, and responsive user interfaces. I focus on turning designs
+        into functional experiences while continually improving my skills in
+        performance, usability, and modern web technologies.
       </p>
       <p class="text-2xl opacity-60">
-        Currently, I'm a Front-End Developer Intern at
-        <span class="font-bold">DepEd CALABARZON Region IV-A</span>, where I
-        <span class="font-bold"
-          >contribute to building and improving internal web applications.</span
-        >
-        I focus on developing
-        <span class="font-bold">responsive, user-friendly interfaces</span>
-        while collaborating with the team to ensure clean code practices and a
-        smooth user experience. During my internship,
-        <span class="font-bold"
-          >I have strengthened my skills in modern frontend technologies and
-          learned the importance of usability, accessibility, and performance in
-          real-world projects.</span
-        >
+        Currently, as a Front-End Developer Intern at DepEd CALABARZON Region
+        IV-A, I work on building and improving internal web applications,
+        emphasizing responsive and user-friendly interfaces. My internship has
+        strengthened my skills in frontend technologies and taught me the
+        importance of usability, accessibility, and performance.
       </p>
       <p class="text-2xl opacity-60">
-        During my capstone project, which was ranked among the top 10 in my
-        semester within the IT department, I had the opportunity to explore both
-        frontend and backend development. While I focused mainly on the
-        frontend, this experience allowed me to build a solid foundation in
-        backend technologies, deepening my passion for creating meaningful,
-        user-centered solutions.
+        My capstone project, ranked among the top 10 in my IT department,
+        allowed me to explore both frontend and backend development. While I
+        mainly focused on the frontend, this experience helped me build a solid
+        foundation in backend technologies and fueled my passion for creating
+        meaningful, user-centered solutions.
       </p>
     </section>
     <section id="experience" class="special-gothic-regular">
@@ -98,7 +86,7 @@ const certifications = ref([
             <h4 class="text-2xl font-bold">
               Front-End Developer Intern - Department of Education
             </h4>
-            <p class="text-lg">
+            <p class="text-xl opacity-80">
               Contributed to the development of the School account feature using
               Vue by integrating APIs for data retrieval and submission.
               Assisted in setting up client-side routing and building responsive
@@ -117,7 +105,7 @@ const certifications = ref([
             <h4 class="text-2xl font-bold">
               Full Stack Android Developer (Capstone) - R.Sarabia Optical
             </h4>
-            <p class="text-lg">
+            <p class="text-xl opacity-80">
               Mobile-Based Virtual Eyeglass Frame Fitting Using Augmented
               Reality with Integrated Online Appointment Management System for
               R. Sarabia Optical. A cutting-edge solution combining augmented
