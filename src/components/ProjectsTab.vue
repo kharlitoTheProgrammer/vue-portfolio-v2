@@ -32,11 +32,8 @@ const projects = ref([
     <h3 class="font-bold text-4xl special-gothic-expanded-one-regular">
       Projects
     </h3>
-    <div
-      class="flex gap-2 mt-5 hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
-      v-for="(item, index) in projects"
-      :key="index"
-    >
+    <div class="flex gap-2 mt-5 hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
+      v-for="(item, index) in projects" :key="index">
       <div>
         <div class="border border-gray-500 w-50 h-50 rounded-md mr-5"></div>
       </div>
@@ -44,11 +41,8 @@ const projects = ref([
         <h4 class="text-2xl font-bold">{{ item.title }}</h4>
         <p class="text-xl opacity-80">{{ item.description }}</p>
         <div class="flex flex-wrap mt-1 gap-0.5">
-          <p
-            class="text-sm text-[#2E7D32] bg-[#121815] h-7 rounded-full flex justify-center items-center px-5 py-1 font-bold hover:-translate-y-2 transition-all ease-in-out duration-500"
-            v-for="(itemUsed, index) in item.techUsed"
-            :key="index"
-          >
+          <p class="text-sm text-[#2E7D32] bg-[#121815] h-7 rounded-full flex justify-center items-center px-5 py-1 font-bold hover:-translate-y-2 transition-all ease-in-out duration-500"
+            v-for="(itemUsed, index) in item.techUsed" :key="index">
             {{ itemUsed.label }}
           </p>
         </div>
@@ -56,3 +50,16 @@ const projects = ref([
     </div>
   </section>
 </template>
+<style scoped>
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.special-gothic-regular {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>

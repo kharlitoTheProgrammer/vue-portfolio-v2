@@ -22,17 +22,11 @@ const certifications = ref([
 
 <template>
   <section id="certifications" class="special-gothic-regular">
-    <h3
-      class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular"
-    >
+    <h3 class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular">
       Certifications
     </h3>
     <div class="flex flex-col gap-5">
-      <div
-        class="mt-5 flex justify-between w-full"
-        v-for="(item, index) in certifications"
-        :key="index"
-      >
+      <div class="mt-5 flex justify-between w-full" v-for="(item, index) in certifications" :key="index">
         <div class="w-[35%] flex mr-10">
           <span class="text-2xl opacity-75">{{ item.date }}</span>
         </div>
@@ -49,3 +43,17 @@ const certifications = ref([
     </div>
   </section>
 </template>
+
+<style scoped>
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.special-gothic-regular {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>

@@ -2,15 +2,12 @@
 
 <template>
   <section id="experience" class="special-gothic-regular">
-    <h3
-      class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular"
-    >
+    <h3 class="text-4xl opacity-100 font-bold special-gothic-expanded-one-regular">
       Experience
     </h3>
     <div class="flex flex-col gap-5">
       <div
-        class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
-      >
+        class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group">
         <div class="w-[35%] flex">
           <span class="text-2xl opacity-75">2025 - Present</span>
         </div>
@@ -29,8 +26,7 @@
         </div>
       </div>
       <div
-        class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group"
-      >
+        class="mt-5 flex justify-between w-full hover:bg-[#20332A] px-6 py-3 rounded-xl hover:transition hover:duration-700 group">
         <div class="w-[35%] flex">
           <span class="text-2xl opacity-75">2024 - 2025</span>
         </div>
@@ -54,3 +50,17 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.special-gothic-regular {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>

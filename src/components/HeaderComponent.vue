@@ -9,6 +9,7 @@ import { onMounted, ref } from "vue";
 const navItems = ref<any>([
   { isSelected: true, label: "About", name: "about" },
   { isSelected: false, label: "Experience", name: "experience" },
+  { isSelected: false, label: "Tech Stack", name: "techStack" },
   { isSelected: false, label: "Projects", name: "projects" },
   { isSelected: false, label: "Certifications", name: "certifications" },
 ]);
@@ -57,21 +58,21 @@ onMounted(() => {
       <h2 class="text-[#A49581] text-3xl">Frontend Developer</h2>
 
       <button
-        class="mt-25 cursor-pointer text-[#A49581] opacity-80 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 gap-1 text-xl animate-pulse">
+        class="mt-20 cursor-pointer text-[#A49581] opacity-80 hover:-translate-y-1 transition ease-in-out duration-300 hover:opacity-100 gap-1 text-xl animate-pulse">
         <a href="/Resume_Kharl_Aquino.pdf" class="flex items-center justify-center gap-2">
           View resumé
           <SquareArrowOutUpRightIcon :size="15" />
         </a>
       </button>
 
-      <section class="mt-25">
+      <section class="mt-5">
         <ul class="text-[#A49581]">
           <li v-for="(item, index) in navItems" :key="index" @click="selectItem(index, item.name)"
             class="cursor-pointer transition duration-300 ease-in-out text-4xl" :class="{
               'hover:underline opacity-50 hover:opacity-80': !item.isSelected,
             }">
             <span v-if="item.isSelected" class="transition-all duration-900 ease-in-out">━━━ <span>{{ item.label
-                }}</span></span>
+            }}</span></span>
             <span v-else>{{ item.label }}</span>
           </li>
         </ul>

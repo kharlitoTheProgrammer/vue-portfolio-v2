@@ -23,3 +23,17 @@
     </p>
   </section>
 </template>
+
+<style scoped>
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.special-gothic-regular {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
